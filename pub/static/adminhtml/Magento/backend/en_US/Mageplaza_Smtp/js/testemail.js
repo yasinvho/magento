@@ -1,0 +1,1 @@
+/home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/view/adminhtml/web/js/testemail.js

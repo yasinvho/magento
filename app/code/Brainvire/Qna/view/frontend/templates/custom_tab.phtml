@@ -1,0 +1,93 @@
+
+     <?php
+             
+               $limit = $block->getConfigValue();
+ 
+              $product = $block->getCurrentProduct(); 
+
+              $enableTab =  $product->getQnaTab();
+              //$enableTab1 =  $product->getQuestionTab();
+
+     if($enableTab == 1 )
+              //if($enableTab == 1 )
+     {               
+?>
+<div id="element" data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": true}}'>
+<?php
+
+               $pname=$product->getName();
+                
+              $question = $block->getAllEmpdeta();
+                      $count = 0;
+        foreach ($question as $deta):
+                     $status = $deta->getData('is_active'); 
+                     $pname1=$deta->getData('product_name');
+                     if($pname==$pname1 && $status==1 && $count < $limit)
+                     {
+                        $count++;
+                                        ?>  
+    
+                    <div data-role="collapsible">
+                        <div data-role="trigger">
+                            <strong>
+                  <p>
+             <?php  
+                            $today = $deta->getData('creation_time');
+             echo "Question :";
+                    echo "<b style='color: red'>".$deta->getData('question')."</br></b></strong>";
+                    echo $deta->getData('name')." ";
+                    echo date("jS F Y", strtotime($today))."</br>";
+            ?>
+             </p>       
+               </div>
+                    </div> 
+                 <div data-role="content">
+
+                  
+            <?php 
+             echo "<strong><ul style='list-style-type:none;'><li>"."Answer :"."</strong>";
+               if($deta->getData('answer'))
+                {
+            echo "<b style='color: green'>".$deta->getData('answer')."</li> </ul></b>";
+                }
+                else
+                   echo "Answer Not Available "."</li> </ul></b>";
+                  ?>
+             
+             </div>
+           
+                 <?php
+             }
+            
+        endforeach;
+        ?>     
+    <div data-role="collapsible">
+        <div data-role="trigger">
+            <button type="submit" class="btn">Ask Question</button>
+        </div>
+    </div >            
+    <div data-role="content">
+        <form method="post"  action="<?= $block->getPostUrl() ?>" class="form-container" data-mage-init='{"validation":{}}' >
+
+    <label for="Question"><b>Question</b></label>
+    <input type="hidden" name="product_name" value="<?php
+     echo $product->getName();?>">
+    <input type="text" placeholder="Enter Question" name="question">
+     
+    <label for="user_name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" class="input-text" >
+    
+    <label for="user_email"><b>email</b></label>
+    <input type="email" placeholder="Enter email" name="email" data-validate="{required:true,'validate-email':true}">
+  </br>
+            <input type="submit" value="Submit" name="submit" class="action subscribe primary" />
+       </form>
+    </div>
+ </div>
+
+<?php 
+    }
+
+
+
+?>

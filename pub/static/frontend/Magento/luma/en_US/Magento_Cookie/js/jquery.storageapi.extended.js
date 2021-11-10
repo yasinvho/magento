@@ -1,0 +1,1 @@
+/home/yasin_vhora/htdocs/magento/vendor/magento/module-cookie/view/base/web/js/jquery.storageapi.extended.js

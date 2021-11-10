@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Brainvire_AdminGrid::gridmenu" title="Grid Menu" module="Brainvire_AdminGrid" sortOrder="50" resource="Brainvire_AdminGrid::gridmenu"/>
+
+
+        <add id="Brainvire_AdminGrid::grid" title="Listing" translate="title" module="Brainvire_AdminGrid" sortOrder="10" parent="Brainvire_AdminGrid::gridmenu" action="grid/index/index" resource="Brainvire_AdminGrid::gridmenu"/>    
+
+    </menu>
+</config>
+
+
+

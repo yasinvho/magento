@@ -1,0 +1,1 @@
+/home/yasin_vhora/htdocs/magento/vendor/magento/module-security/view/base/web/js/escaper.js

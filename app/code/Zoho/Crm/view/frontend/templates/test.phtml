@@ -1,0 +1,169 @@
+<h4>Hello</h4>
+<form method="post">
+        <input type="submit" name="button"
+                class="button" value="getAccesstoken" />
+
+        <input type="submit" name="button1"
+                class="button" value="createTicket" />
+          
+        <input type="submit" name="button2"
+                class="button" value="createLeads" />
+</form>
+
+<?php     
+    $helper = $this->helper('Zoho\Crm\Helper\Data');
+    
+    if(isset($_POST['button'])){
+    $values = $helper->getAccesstoken();
+    echo $values."</br>";
+    }
+    elseif(isset($_POST['button1']))
+    {
+                 $datget = '{
+            "subject": "Issue with product on bill 1122",
+            "description": "The product I received with bill 1122 and item XYZ 101 is damaged on the side",
+            "classification": "Complaint",
+            "contact": {
+                "firstName": "John",
+                "lastName": "Doe",
+                "email": "john@example.com",
+                "phone": "+919778425799"
+            },
+            "email": "john@example.com",
+            "phone": "+919778425799",
+            "status": "Open",
+            "channel": "Web",
+            "departmentId": "571851000000006907"
+        }';
+
+        //echo $datget;
+        $firstName = 'yasin';
+        $lastName = 'vhora';
+        $fullContactNumber = '+91-9054015262';
+        $email = 'vhorayasin1998@gmail.com';
+        $jobName = 'R & D Executive';
+       $message = "Name : " . $firstName . " " . $lastName . "\r\n" .
+                    "Contact Number : " . $fullContactNumber . "\r\n" .
+                    "email :" . $email . "\r\n" .
+                    "Job Position :" . $jobName . "\r\n";
+
+
+          $data1 = json_decode($datget);
+           echo "<pre>";  
+          print_r($data1);
+
+                $crmdata['subject'] = "Issue with product on bill 1122";
+                $crmdata['description'] = $message;
+                $crmdata['classification'] = "Complaint";
+                $crmdata['contact']['firstName'] = "brijen";
+                $crmdata['contact']['lastName'] = "kharawala";
+                $crmdata['contact']['email'] = "brije.kharawal@brainvire.com";
+                $crmdata['contact']['phone'] = "+919778425778" ;
+                $crmdata['email'] = "brije.kharawal@brainvire.com";
+                $crmdata['phone'] = "+91977842577";
+                $crmdata['status'] = 'open';
+                $crmdata['channel'] = 'Web';
+                $crmdata['departmentId'] = "571851000000006907"; 
+         
+
+           echo "<pre>";  
+          print_r($crmdata);
+        $tickets = $helper->createTicket($crmdata);
+          echo $tickets;
+     }
+   elseif(isset($_POST['button2'])){
+         $name = "parth";
+          $datget = '{  "data": [
+              {
+                  "First_Name": "'.$name.'",
+                  "Last_Name": "vhora",
+                  "Email": "yasin.vhora@brainvire.com",
+                  "Mobile": "+91924992423",
+                  "Category": "Engagement Rings/Solitaires - Enquiry Page",
+                  "Lead_Source": "Website",
+                  "Interested_Products": "Looking for personally engraved diamond ring"
+              }
+          ]
+       }';
+       echo $datget;
+        $data1 = json_decode($datget);
+        echo "<pre>";
+        print_r($data1);   
+        echo "</br>";
+        $data2 = json_encode($data1);
+        echo "<pre>";
+        print_r($data2);   
+        echo "</br>";
+            $crmdatalead['data'][] = [
+            'First_Name' => $name,
+            'Last_Name' => "vhora",
+            'Email' => "yasin.vhora@brainvire.com",
+            'Mobile' => "+91924992423",
+            'Lead_Source' => 'Website',
+            'Interested_Products' => "Looking for personally engraved diamond ring",];
+
+             // $datget = '{  "data": [
+             //          {
+             //              "First_Name": "'.$data['first_name'].'",
+             //              "Last_Name": "'.$data['last_name'].'",
+             //              "Email": "'.$data['email'].'",
+             //              "Mobile": "'.$data['contact_number'].'",
+             //              "Category": "'.$data['first_name'].'",
+             //              "Lead_Source": "Website",
+             //              "Interested_Products": "'.$interested_products.'"
+             //          }
+             //      ]
+             //   }';  
+           // $crmdatalead = json_decode($datget);
+        
+        echo "<pre>";
+        print_r($crmdatalead);   
+        echo "</pre>";
+        
+        $crmdataleade = json_encode($crmdatalead);
+        
+        echo "<pre>";
+        print_r($crmdataleade);   
+        echo "</br>";
+
+        $tickets = $helper->createLeads($crmdataleade);
+        print_r($tickets);
+      }
+      else
+      {
+        echo "click any Button";
+      }
+?>
+
+                   <iframe id="googlereviewiframe" frameborder="0" scrolling="no" title="Google Review" 
+               loading="auto" src="https://sddevelopers.co.in/review_v2/Review/googlereviewiframe"
+               style="position: relative; width: 100%; border-style: none; display: block; overflow: hidden;height:250px;">
+               </iframe> 
+            <!--    <script type="text/javascript">
+              document.querySelector("iframe").addEventListener("load", function() {
+                  const iframeBody = this.contentWindow.document.body;
+                  const height = Math.max(iframeBody.scrollHeight, iframeBody.offsetHeight);
+                  this.style.height = `${height-100}px`;
+              });
+              window.addEventListener("orientationchange", function() {
+                setTimeout(function(){ 
+              const iframeBody = document.querySelector("iframe").contentWindow.document.body;
+              const height1 = Math.max(iframeBody.scrollHeight, iframeBody.offsetHeight);
+              document.querySelector("iframe").style.height = `${height1-100}px`;
+             }, 100);
+              }, false);
+              </script> -->
+               <script type="text/javascript">
+          document.querySelector("iframe").addEventListener("load", function() {
+              const iframeBody = this.contentWindow.document.body;
+              const height = Math.max(iframeBody.scrollHeight, iframeBody.offsetHeight);
+              this.style.height = `${height-100}px`;
+          });
+          window.addEventListener("orientationchange", function() {
+            setTimeout(function(){ 
+          const iframeBody = document.querySelector("iframe").contentWindow.document.body;
+          const height1 = Math.max(iframeBody.scrollHeight, iframeBody.offsetHeight);
+          document.querySelector("iframe").style.height = `${height1-100}px`;
+         }, 100);
+          }, false);
+          </script>   

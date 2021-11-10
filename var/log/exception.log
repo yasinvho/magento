@@ -1,0 +1,68 @@
+[2021-10-08 10:18:53] main.CRITICAL: Unable to send mail: Unknown error {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): Unable to send mail: Unknown error at /home/yasin_vhora/htdocs/magento/vendor/magento/module-email/Model/Transport.php:103, Laminas\\Mail\\Transport\\Exception\\RuntimeException(code: 0): Unable to send mail: Unknown error at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Transport/Sendmail.php:298)"} []
+[2021-10-15 09:37:30] main.CRITICAL: Unable to send mail: Unknown error {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): Unable to send mail: Unknown error at /home/yasin_vhora/htdocs/magento/vendor/magento/module-email/Model/Transport.php:103, Laminas\\Mail\\Transport\\Exception\\RuntimeException(code: 0): Unable to send mail: Unknown error at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Transport/Sendmail.php:298)"} []
+[2021-10-22 10:16:24] main.CRITICAL: Unable to send mail: Unknown error {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): Unable to send mail: Unknown error at /home/yasin_vhora/htdocs/magento/vendor/magento/module-email/Model/Transport.php:103, Laminas\\Mail\\Transport\\Exception\\RuntimeException(code: 0): Unable to send mail: Unknown error at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Transport/Sendmail.php:298)"} []
+[2021-10-23 10:41:06] main.CRITICAL: Not registered handle grid_test_listing_data_source {"exception":"[object] (Exception(code: 0): Not registered handle grid_test_listing_data_source at /home/yasin_vhora/htdocs/magento/vendor/magento/framework/View/Element/UiComponent/DataProvider/CollectionFactory.php:49)"} []
+[2021-10-31 07:27:51] main.CRITICAL: Warning: include(/home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-log/src/Exception/RuntimeException.php): failed to open stream: Too many open files in /home/yasin_vhora/htdocs/magento/vendor/composer/ClassLoader.php on line 444 {"exception":"[object] (Magento\\Eav\\Model\\Entity\\Attribute\\Exception(code: 0): Warning: include(/home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-log/src/Exception/RuntimeException.php): failed to open stream: Too many open files in /home/yasin_vhora/htdocs/magento/vendor/composer/ClassLoader.php on line 444 at /home/yasin_vhora/htdocs/magento/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121)"} []
+[2021-11-09 12:11:44] main.CRITICAL: 5.7.0 Authentication Required. Learn more at
+ 5.7.0  https://support.google.com/mail/?p=WantAuthError l6sm20383057pfc.126 - gsmtp
+ {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): 5.7.0 Authentication Required. Learn more at
+ 5.7.0  https://support.google.com/mail/?p=WantAuthError l6sm20383057pfc.126 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/Mail/Transport.php:141, Laminas\\Mail\\Protocol\\Exception\\RuntimeException(code: 0): 5.7.0 Authentication Required. Learn more at
+ 5.7.0  https://support.google.com/mail/?p=WantAuthError l6sm20383057pfc.126 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Protocol/AbstractProtocol.php:339)"} []
+[2021-11-09 12:11:59] main.CRITICAL: 5.7.0 Authentication Required. Learn more at
+ 5.7.0  https://support.google.com/mail/?p=WantAuthError s2sm18261122pfe.215 - gsmtp
+ {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): 5.7.0 Authentication Required. Learn more at
+ 5.7.0  https://support.google.com/mail/?p=WantAuthError s2sm18261122pfe.215 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/Mail/Transport.php:141, Laminas\\Mail\\Protocol\\Exception\\RuntimeException(code: 0): 5.7.0 Authentication Required. Learn more at
+ 5.7.0  https://support.google.com/mail/?p=WantAuthError s2sm18261122pfe.215 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Protocol/AbstractProtocol.php:339)"} []
+[2021-11-09 12:12:20] main.CRITICAL: 5.7.0 Authentication Required. Learn more at
+ 5.7.0  https://support.google.com/mail/?p=WantAuthError j8sm20619644pfu.27 - gsmtp
+ {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): 5.7.0 Authentication Required. Learn more at
+ 5.7.0  https://support.google.com/mail/?p=WantAuthError j8sm20619644pfu.27 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/Mail/Transport.php:141, Laminas\\Mail\\Protocol\\Exception\\RuntimeException(code: 0): 5.7.0 Authentication Required. Learn more at
+ 5.7.0  https://support.google.com/mail/?p=WantAuthError j8sm20619644pfu.27 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Protocol/AbstractProtocol.php:339)"} []
+[2021-11-09 12:12:30] main.CRITICAL: 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials s3sm2614028pjk.41 - gsmtp
+ {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials s3sm2614028pjk.41 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/Mail/Transport.php:141, Laminas\\Mail\\Protocol\\Exception\\RuntimeException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials s3sm2614028pjk.41 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Protocol/AbstractProtocol.php:339)"} []
+[2021-11-09 12:18:34] main.CRITICAL: 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials t15sm7494139pfl.186 - gsmtp
+ {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials t15sm7494139pfl.186 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/Mail/Transport.php:141, Laminas\\Mail\\Protocol\\Exception\\RuntimeException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials t15sm7494139pfl.186 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Protocol/AbstractProtocol.php:339)"} []
+[2021-11-09 12:19:42] main.CRITICAL: 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials g14sm15076712pgo.88 - gsmtp
+ {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials g14sm15076712pgo.88 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/Mail/Transport.php:141, Laminas\\Mail\\Protocol\\Exception\\RuntimeException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials g14sm15076712pgo.88 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Protocol/AbstractProtocol.php:339)"} []
+[2021-11-09 12:20:07] main.CRITICAL: 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials l9sm15039601pga.49 - gsmtp
+ {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials l9sm15039601pga.49 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/Mail/Transport.php:141, Laminas\\Mail\\Protocol\\Exception\\RuntimeException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials l9sm15039601pga.49 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Protocol/AbstractProtocol.php:339)"} []
+[2021-11-09 12:21:44] main.CRITICAL: 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials s7sm20709633pfu.139 - gsmtp
+ {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials s7sm20709633pfu.139 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/Mail/Transport.php:141, Laminas\\Mail\\Protocol\\Exception\\RuntimeException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials s7sm20709633pfu.139 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Protocol/AbstractProtocol.php:339)"} []
+[2021-11-09 12:21:55] main.CRITICAL: 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials o2sm2830212pfu.206 - gsmtp
+ {"exception":"[object] (Magento\\Framework\\Exception\\MailException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials o2sm2830212pfu.206 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Smtp/Mail/Transport.php:141, Laminas\\Mail\\Protocol\\Exception\\RuntimeException(code: 0): 5.7.8 Username and Password not accepted. Learn more at
+ 5.7.8  https://support.google.com/mail/?p=BadCredentials o2sm2830212pfu.206 - gsmtp
+ at /home/yasin_vhora/htdocs/magento/vendor/laminas/laminas-mail/src/Protocol/AbstractProtocol.php:339)"} []

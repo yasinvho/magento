@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Brainvire_Qna::menus1" title="Product QNA" module="Brainvire_Qna" sortOrder="50" resource="Brainvire_Qna::menus1"/>
+
+
+        <add id="Brainvire_Qna::question" title="Questions And Answers" translate="title" module="Brainvire_Qna" sortOrder="10" parent="Brainvire_Qna::menus1" action="qna/index/index" resource="Brainvire_Qna::question"/>    
+
+        <add id="Brainvire_Qna::configuration" title="Configurations" translate="title" module="Brainvire_Qna" sortOrder="10" parent="Brainvire_Qna::menus1" action="admin/system_config/index" resource="Brainvire_Qna::question"/>
+    </menu>
+</config>
+
+
+

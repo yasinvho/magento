@@ -1,0 +1,1 @@
+/home/yasin_vhora/htdocs/magento/vendor/magento/module-checkout/view/frontend/web/js/sidebar.js

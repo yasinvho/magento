@@ -1,0 +1,1 @@
+/home/yasin_vhora/htdocs/magento/app/code/Mageplaza/Core/view/adminhtml/web/js/help.js

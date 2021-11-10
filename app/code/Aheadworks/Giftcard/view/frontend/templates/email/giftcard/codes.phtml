@@ -1,0 +1,17 @@
+<?php
+/**
+ * Copyright 2019 aheadWorks. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Framework\View\Element\Template */
+?>
+<?php if ($block->hasGiftcards()): ?>
+    <?php foreach ($this->getGiftcards() as $code): ?>
+        <strong class="gift-card-info__code">
+            <?php /* @noEscape */ echo $code ?>
+        </strong><br />
+    <?php endforeach; ?>
+<?php endif; ?>
